@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motorcycle Racing Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gameContainer">
+
+    <header>
+        <h1>🏍 Motorcycle Racing Game</h1>
+        <div id="scoreBoard">
+            Score: <span id="score">0</span>
+        </div>
+    </header>
+
+    <div id="gameArea">
+        <div id="road"></div>
+
+        <!-- Player Motorcycle -->
+        <div id="bike">🏍</div>
+
+        <!-- Start Screen -->
+        <div id="startScreen">
+            <h2>Press Start</h2>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+        <!-- Game Over -->
+        <div id="gameOver" style="display:none;">
+            <h2>Game Over</h2>
+            <button onclick="restartGame()">Restart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Controls: ⬅ Left | ➡ Right</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
